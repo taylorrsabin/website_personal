@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Default tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Compatible with old versions of ie -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- For search engines -->
+    <meta
+      name="description"
+      content="Taylor Sabin's personal website, including experience, projects, and personal info"
+    />
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="site.webmanifest" />
+    <!-- Android extra -->
+    <meta name="theme-color" content="#1e3799" />
+    <!-- Facebook Open Graph -->
+    <meta property="og:url" content="https://taylorsabin.com/" />
+    <meta property="og:title" content="Taylor Sabin" />
+    <meta
+      property="og:description"
+      content="Taylor Sabin's personal website, including experience, projects, and personal info"
+    />
+    <meta
+      property="og:image"
+      content="https://taylorsabin.com/images/favicon-32x32.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="600" />
+    <meta property="og:image:alt" content="TS Logo" />
+    <meta property="og:type" content="article" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site:id" content="@BYU" />
+    <meta
+      name="twitter:image"
+      content="https://taylorsabin.com/images/favicon-32x32.png"
+    />
+    <meta name="twitter:image:alt" content="TS Logo" />
+    <!-- Website title -->
+    <title>Taylor Sabin - Home</title>
+    <!-- Normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <!-- Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Inline svg-->
+      <div class="container" onclick="this.classList.toggle('active')">
+        <svg width="150" height="150" viewBox="0 0 200 200">
+          <g stroke-width="6.5" stroke-linecap="round">
+            <path
+              d="M72 82.286h28.75"
+              fill="#009100"
+              fill-rule="evenodd"
+              stroke="#0d0c31"
+            />
+            <path
+              d="M100.75 103.714l72.482-.143c.043 39.398-32.284 71.434-72.16 71.434-39.878 0-72.204-32.036-72.204-71.554"
+              fill="none"
+              stroke="#0d0c31"
+            />
+            <path
+              d="M72 125.143h28.75"
+              fill="#009100"
+              fill-rule="evenodd"
+              stroke="#0d0c31"
+            />
+            <path
+              d="M100.75 103.714l-71.908-.143c.026-39.638 32.352-71.674 72.23-71.674 39.876 0 72.203 32.036 72.203 71.554"
+              fill="none"
+              stroke="#0d0c31"
+            />
+            <path
+              d="M100.75 82.286h28.75"
+              fill="#009100"
+              fill-rule="evenodd"
+              stroke="#0d0c31"
+            />
+            <path
+              d="M100.75 125.143h28.75"
+              fill="#009100"
+              fill-rule="evenodd"
+              stroke="#0d0c31"
+            />
+          </g>
+        </svg>
+      </div>
+      <!-- Nav Links-->
+      <nav>
+        <ul>
+          <li><a>Home</a></li>
+          <li><a href="about/index.html">About</a></li>
+          <li><a href="form/index.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Responsive hero image-->
+    <div class="hero">
+      <picture>
+        <source srcset="images/taylorPortrait1600.jpg" media="(min-width: 901px)" />
+        <source srcset="images/taylorPortrait900.jpg" media="(min-width: 501px)" />
+        <source srcset="images/taylorPortrait500.jpg" media="(max-width: 500px)" />
+        <img src="images/taylorPortrait900.jpg" alt="Taylor Sabin portrait" />
+      </picture>
+      <div class="text-wrapper">
+        <div class="blah">
+          <h1>Taylor Sabin</h1>
+          <p>
+            A little techy, a little outdoorsy, and something of a data nerd. 
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <!--Definition List-->
+      <article class="panel">
+          <div class="image-wrapper">
+            <img
+              src="images/salt.jpg"
+              alt="Taylor on top of Angels Landing in Zion National Park"
+            />
+          </div>
+
+        <div class="left text-wrapper">
+          <h2>More Than Meets the Eye</h2>
+          <p>
+            Like many people, I love a good story. One with detail, one with direction, and most importantly, one with meaning. 
+            Unlike many people however, I also love a good story told by data. 
+            Too often people find data boring, but I’m a believer that it shouldn’t be that way; the story simply just isn't being told well most of the time.
+            <br><br>
+            <i>I'm here to flip this problem on its head.</i>
+            <br><br>
+            I seek to use my experience with data engineering, system design, and data analysis to help rewrite the narrative and be a positive force in making data accessible and usable for all. 
+            Because after all, every good data-based story needs to start with good foundation of data and database design.
+          </p>
+          <a class="button4" href="https://www.linkedin.com/in/taylorrsabin/" target="_blank"
+            >Connect with Me</a
+          >
+        </div>
+      </article>
+      <article class="panel">
+        <div class="left image-wrapper">
+          <img src="images/headshot.jpg" alt="Portrait of Taylor"
+          />
+        </div>
+        <div class="text-wrapper">
+          <h2>Experience</h2>
+          <dl>
+            <dt>Data Engineer - BYU Dining Services</dt>
+            <dt>Content Migration Consultant Intern - Lucid Software</dt>
+            <dt>Computer Support Specialist - BYU McKay School of Education</dt>
+          </dl>
+          <a class="button3" href="files/resume.pdf" target="_blank"
+            >View My Resumé</a
+          >
+        </div>
+      </article>
+
+      <aside class="full-wide">
+        <blockquote>
+          "He's pretty solid. If I could give him a rating, it would be a 10/10 with an enthusiastic thumbs up"
+        </blockquote>
+        <p>- Brock (Former Employer)</p>
+        <blockquote>
+          "On a purely professionally level, he's likely the next Elon Musk. Off the record though, he's probably the spiciest coworker I've ever had"
+        </blockquote>
+        <p>- Rob (Former Coworker)</p>
+      </aside>
+
+      <article class="panel">
+          <div class="image-wrapper">
+            <img src="images/lucid.jpg" alt="Portrait of Taylor" />
+          </div>
+        <div class="left text-wrapper">
+          <h2>Portfolio</h2>
+          <p>Using python statistics and visualizations, I collaborated with a team of fellow students to conduct a data analysis project that explores the relationship between critic's and audience's move ratings, as well as their relationships with box office performance.</p>
+          <a class="button3" href="files/pythonProject.pdf" target="_blank">See My Work</a>
+        </div>
+      </article>
+    </main>
+
+    <div class="cards">
+      <div class="card">
+        <a>
+          <div class="image-wrapper">
+            <img
+              src="images/isgroup.jpg"
+              alt="Lucid"
+            />
+          </div>
+          <div class="text-wrapper">
+            <p>My information systems junior core teammates</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="card">
+        <a>
+          <div class="image-wrapper">
+            <img
+              src="images/bike.jpg"
+              alt="Taylor with his dad at the top of Mt. St. Helens"
+            />
+          </div>
+          <div class="text-wrapper">
+            <p>Cycling race with my dad at the summit of Mount St. Helens, WA</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="card">
+        <a>
+          <div class="image-wrapper">
+            <img
+              src="images/lucidselfie.jpg"
+              alt="Taylor on the beach in Mexico"
+            />
+          </div>
+          <div class="text-wrapper"><p>My first day of work with Lucid</p></div>
+        </a>
+      </div>
+
+      <div class="card">
+        <a>
+          <div class="image-wrapper">
+            <img
+              src="images/gigharbor.jpg"
+              alt="Gig Harbor, Washington waterfront"
+            />
+          </div>
+          <div class="text-wrapper">
+            <p>My hometown of Gig Harbor, Washington</p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>Taylor Sabin - 2022</p>
+    </footer>
+
+    <script>
+      const header = document.querySelector("header");
+
+      document.querySelector(".container").addEventListener("click", () => {
+        header.classList.toggle("close");
+      });
+    </script>
+  </body>
+</html>

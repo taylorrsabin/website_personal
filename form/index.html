@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Default tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Compatible with old versions of ie -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- For search engines -->
+    <meta
+      name="description"
+      content="Taylor Sabin's personal website, including experience, projects, and personal info"
+    />
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="site.webmanifest" />
+    <!-- Android extra -->
+    <meta name="theme-color" content="#1e3799" />
+    <!-- Facebook Open Graph -->
+    <meta property="og:url" content="https://taylorsabin.com/" />
+    <meta property="og:title" content="Taylor Sabin" />
+    <meta
+      property="og:description"
+      content="Taylor Sabin's personal website, including experience, projects, and personal info"
+    />
+    <meta
+      property="og:image"
+      content="https://taylorsabin.com/images/favicon-32x32.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="600" />
+    <meta property="og:image:alt" content="TS Logo" />
+    <meta property="og:type" content="article" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site:id" content="@BYU" />
+    <meta
+      name="twitter:image"
+      content="https://taylorsabin.com/images/favicon-32x32.png"
+    />
+    <meta name="twitter:image:alt" content="TS Logo" />
+    <!-- Website title -->
+    <title>Contact</title>
+    <!-- Normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <!-- Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="form container" onclick="this.classList.toggle('active')">
+        <svg width="150" height="150" viewBox="0 0 200 200">
+          <g stroke-width="6.5" stroke-linecap="round">
+            <path
+              d="M72 82.286h28.75"
+              fill="#009100"
+              fill-rule="evenodd"
+              stroke="#0d0c31"
+            />
+            <path
+              d="M100.75 103.714l72.482-.143c.043 39.398-32.284 71.434-72.16 71.434-39.878 0-72.204-32.036-72.204-71.554"
+              fill="none"
+              stroke="#0d0c31"
+            />
+            <path
+              d="M72 125.143h28.75"
+              fill="#009100"
+              fill-rule="evenodd"
+              stroke="#0d0c31"
+            />
+            <path
+              d="M100.75 103.714l-71.908-.143c.026-39.638 32.352-71.674 72.23-71.674 39.876 0 72.203 32.036 72.203 71.554"
+              fill="none"
+              stroke="#0d0c31"
+            />
+            <path
+              d="M100.75 82.286h28.75"
+              fill="#009100"
+              fill-rule="evenodd"
+              stroke="#0d0c31"
+            />
+            <path
+              d="M100.75 125.143h28.75"
+              fill="#009100"
+              fill-rule="evenodd"
+              stroke="#0d0c31"
+            />
+          </g>
+        </svg>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about/index.html">About</a></li>
+          <li><a>Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Contact Me</h1>
+      <div class="form">
+      <div class="form-wrap">
+        <div>
+          <div class="loading hidden">
+            <div class="loader"></div>
+          </div>
+          <p class="success-message hidden">Thank you for reaching out!</p>
+          <p class="error-message hidden">Well this is awkward... It looks like something went wrong :/
+          </p>
+        </div>
+        <form name="me">
+          <label for="firstname">First name:</label>
+          <input type="text" name="firstname" id="firstname" required autofocus/>
+          <label for="lastname">Last name:</label>
+          <input type="text" name="lastname" id="lastname" required/>
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" required />
+          <label for="phone">Phone number:</label>
+          <input type="tel" name="phone" id="phone" />
+          <p class="question">
+            Which best applies to you?
+          </p>
+          <input type="radio" name="who" id="recruiter" value="recruiter" />
+          <label for="recruiter">Recruiter</label>
+          <input type="radio" name="who" id="friend" value="friend" />
+          <label for="friend">Associate</label>
+          <input type="radio" name="who" id="family" value="family" />
+          <label for="other">Other</label>
+          <label for="message">What would you like to say?</label>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="5"
+            placeholder="Explain..."
+          ></textarea>
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <p>Taylor Sabin - 2022</p>
+    </footer>
+    <script>
+      // enter the URL for your Google Sheet 
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbwLaSU4hPHhmqxJDXvXDstmLTE7pAy60kVCw1QbdcDutVGC0qHywiDbD5Vo7EQurdD3/exec'
+  
+      // add a name attribute to your <form> and enter its value here 
+      const form = document.forms['me']
+  
+      // enter the value of your checkboxes' name attribute
+      const checkboxName = "attributes"
+  
+      // set these to your loader and message classes
+      const loading = document.querySelector('.loading')
+      const successMessage = document.querySelector('.success-message')
+      const errorMessage = document.querySelector('.error-message')
+  
+      // this will run when the submit button is clicked
+      form.addEventListener('submit', event => {
+        // stops default form handling so we can submit it to Google Sheets instead
+        event.preventDefault()
+  
+        // show the loader and hide form
+        form.classList.add('hidden')
+        loading.classList.remove('hidden')
+  
+        // collect the form values into an object that can be sent to Google Sheets
+        let fd = new FormData(form);
+  
+        /* If more than one checkbox is selected, the form will have multiple keys 
+           (checkbox name). Only the first checkbox value would be entered into 
+           Google Sheets. 
+           To get around this, concat all the selected checkbox values into a single 
+           string and send that value */
+  
+        // grab all the selected values stored as key/value pairs of checkboxName/value
+        let checkBoxValues = fd.getAll(checkboxName)
+  
+        // then delete them from the formData object
+        fd.delete(checkboxName);
+  
+        // create a string
+        let text = ""
+        if (checkBoxValues.length <= 2) {
+          text = checkBoxValues.join(" and ")
+        } else {
+          let end = checkBoxValues.pop();
+          text = checkBoxValues.join(", ");
+          text += ", and " + end;
+        }
+        // add the key/value pair checkboxName/text back to the formData object
+        fd.append(checkboxName, text);
+  
+        // use an asynchronous request to POST your formData object to your Google Sheet
+        fetch(scriptURL, {
+            method: 'POST',
+            body: fd,
+          })
+          // if response ok, show success message and hide loader, else display error
+          .then(response => {
+            loading.classList.add('hidden')
+            if (response.ok) {
+              console.log('Success!', response)
+              successMessage.classList.remove('hidden')
+            } else {
+              console.log("Something has gone terribly wrong and I'm rather afraid I don't know what to do.",
+                response)
+              errorMessage.classList.remove('hidden')
+            }
+          })
+          // if error, show error message and hide loader
+          .catch(error => {
+            console.error('Error!', error.message)
+            errorMessage.classList.remove('hidden')
+            loading.classList.add('hidden')
+          })
+      })
+    </script>
+  </body>
+</html>
